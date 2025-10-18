@@ -1,6 +1,6 @@
 <script lang="ts">
-	import LogoHorizontal from '$lib/assets/images/logo-horizontal.svelte';
-	import BackgroundImage from '$lib/assets/images/login-background2.jpg';
+	import LogoHorizontal from '$lib/assets/images/logo-horizontal.png';
+	import BackgroundImage from '$lib/assets/images/PLAYSAFE-07.jpg';
 	import {
 		FieldGroup,
 		Field,
@@ -96,7 +96,7 @@
 	<div class="flex flex-col gap-4 p-6 md:p-8 w-full">
 		<div class="flex justify-center gap-2 md:justify-start">
 			<a href="/" class="flex items-center gap-2 font-medium transition-opacity hover:opacity-80">
-				<LogoHorizontal />
+				<img src={LogoHorizontal} alt="Logo" class="h-8 w-auto" />
 			</a>
 		</div>
 		<div class="flex flex-1 items-center justify-center">
@@ -480,7 +480,7 @@
 		<img
 			src={BackgroundImage}
 			alt="Background"
-			class="absolute inset-0 h-full w-full object-cover dark:opacity-40"
+			class="absolute inset-0 h-full w-full object-cover"
 		/>
 		<div class="absolute inset-0 flex items-center justify-center z-20 p-12">
 			<div class="max-w-lg text-center space-y-6">
